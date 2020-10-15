@@ -1,0 +1,31 @@
+@mixin palete($container, $baseColor, $textBaseColor) {
+  .#{$container} {
+    .base-color {
+      background-color: $baseColor;
+
+      .color-box-text {
+        color: $textBaseColor;
+      }
+    }
+
+    @for $i from 1 through 4 {
+      .darken-#{$i} {
+        background-color: darken($baseColor, $i * 6%);
+
+        .color-box-text {
+          color: lighten($textBaseColor, $i * 6%);
+        }
+      }
+    }
+
+    @for $i from 1 through 4 {
+      .lighten-#{$i} {
+        background-color: lighten($baseColor, $i * 6%);
+
+        .color-box-text {
+          color: darken($textBaseColor, $i * 6%);
+        }
+      }
+    }
+  }
+}

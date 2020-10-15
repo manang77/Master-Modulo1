@@ -1,0 +1,43 @@
+@import "ejercicio1_aux";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+    display: inline-block;
+    margin: 4vh 0;
+  }
+  .box {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 5px;
+    margin: 4px;
+  }
+
+  .box_base {
+    width: 8vw;
+    height: 10vh;
+    border-radius: 5px;
+    margin: 4px;
+  }
+}
+
+@include palete("container-1", red, lightblue);
+@include palete("container-2", blue, olive);
+@include palete("container-3", green, magenta);

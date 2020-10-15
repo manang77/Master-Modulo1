@@ -1,0 +1,29 @@
+@mixin high-resolution() {
+  nav {
+    height: 54px;
+
+    ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    li {
+      width: 150px;
+    }
+  }
+}
+
+@mixin low-resolution() {
+  nav {
+    height: auto;
+
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    li {
+      width: 100%;
+    }
+  }
+}

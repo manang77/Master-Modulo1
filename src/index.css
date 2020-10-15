@@ -1,0 +1,35 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+
+.container {
+  border: 1px solid gray;
+  box-shadow: 12px 12px 12px 2px gray;
+  width: 20vw;
+  margin: 20px;
+}
+
+h2 {
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  color: darkblue;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+li :hover {
+  color: lavender;
+}
